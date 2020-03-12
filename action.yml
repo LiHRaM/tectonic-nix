@@ -10,7 +10,7 @@ inputs:
   packages:
     description: "Additional packages necessary for copiling the document."
     required: false
-    default: []
+    default: ""
 runs:
   using: 'docker'
   image: 'Dockerfile'

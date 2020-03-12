@@ -1,9 +1,7 @@
 #!/bin/sh -l
 set -e
-set -x
 
-for pkg in $1; do
-    nix-env -i $pkg
-done
-
+if [ ! -n $1]; then
+    nix-env -i $1
+fi
 tectonic $2
