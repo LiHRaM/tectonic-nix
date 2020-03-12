@@ -1,0 +1,12 @@
+name: "Latex via Tectonic"
+description: "Use tectonic to compile a LaTeX document"
+inputs:
+    master-doc:
+        description: "Path to master file."
+        required: true
+        default: "master.tex"
+runs:
+    using: 'docker'
+    image: 'Dockerfile'
+    args:
+        - ${{ inputs.master-doc }}
