@@ -1,6 +1,9 @@
 name: "Latex via Tectonic"
 description: "Use tectonic to compile a LaTeX document"
 author: "Hilmar Gústafsson"
+branding:
+  color: black
+  icon: book-open
 inputs:
   master-doc:
     description: "Path to master file."
