@@ -1,13 +1,18 @@
 name: "Latex via Tectonic"
 description: "Use tectonic to compile a LaTeX document"
-icon: book-open
+author: "Hilmar Gústafsson"
+branding: book-open
 inputs:
-    master-doc:
-        description: "Path to master file."
-        required: true
-        default: "master.tex"
+  master-doc:
+    description: "Path to master file."
+    required: true
+    default: "master.tex"
+  packages:
+    description: "Additional packages necessary for copiling the document."
+    required: false
+    default: []
 runs:
-    using: 'docker'
-    image: 'Dockerfile'
-    args:
-        - ${{ inputs.master-doc }}
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.packages }} ${{ inputs.master-doc }}

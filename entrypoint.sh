@@ -2,4 +2,8 @@
 set -e
 set -x
 
-tectonic $1
+for pkg in $1; do
+    nix-env -i $pkg
+done
+
+tectonic $2
