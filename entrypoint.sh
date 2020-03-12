@@ -2,7 +2,10 @@
 set -e
 set -x
 
-if [ -n "$1" ]; then
+# There was only one argument
+if [ -z "$2" ]; then
+    tectonic $1
+else
     nix-env -i $1
+    tectonic $2
 fi
-tectonic $2
