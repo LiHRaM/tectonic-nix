@@ -15,4 +15,4 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - "${{ inputs.packages }}" "${{ inputs.master-doc }}"
+    - ${{ inputs.packages }} ${{ inputs.master-doc }}
