@@ -1,5 +1,5 @@
 #!/bin/sh -l
+set -e
+set -x
 
-echo "Calling tectonic on $1."
 tectonic $1
-echo "Done."
