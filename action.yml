@@ -1,5 +1,6 @@
 name: "Latex via Tectonic"
 description: "Use tectonic to compile a LaTeX document"
+icon: book-open
 inputs:
     master-doc:
         description: "Path to master file."
