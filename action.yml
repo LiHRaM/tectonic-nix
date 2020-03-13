@@ -10,7 +10,7 @@ inputs:
     required: true
     default: "master.tex"
   packages:
-    description: "Additional packages necessary for compiling the document."
+    description: "Additional packages necessary for compiling the document. Find packages at https://nixos.org/nixos/packages.html?channel=nixpkgs-unstable."
     required: false
     default: ""
 runs:
