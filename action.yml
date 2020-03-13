@@ -10,7 +10,7 @@ inputs:
     required: true
     default: "master.tex"
   packages:
-    description: "Additional packages necessary for copiling the document."
+    description: "Additional packages necessary for compiling the document."
     required: false
     default: ""
 runs:
