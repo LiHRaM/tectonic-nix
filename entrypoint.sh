@@ -6,6 +6,6 @@ set -x
 if [ -z "$2" ]; then
     tectonic $1
 else
-    nix-env -i $1
+    nix-env -iA $1
     tectonic $2
 fi
