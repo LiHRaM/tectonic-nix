@@ -5,7 +5,7 @@ branding:
   color: black
   icon: book-open
 inputs:
-  master-doc:
+  file:
     description: "Path to master file."
     required: true
     default: "master.tex"
@@ -17,4 +17,5 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.packages }} ${{ inputs.master-doc }}
+    - ${{ inputs.packages }}
+    - ${{ inputs.file }}
