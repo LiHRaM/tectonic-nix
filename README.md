@@ -12,5 +12,5 @@ This action compiles LaTeX documents using Tectonic.
 ```yaml
 uses: lihram/tectonic-nix
 with:
-    master-doc: "report/master.tex"
+    file: "report/master.tex"
 ```
