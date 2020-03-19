@@ -4,7 +4,7 @@ This action compiles LaTeX documents using Tectonic.
 
 ## Inputs
 
-### `master-doc`
+### `file`
 **Required** The path to the master document. Default: `"master.tex"`.
 
 ## Example Usage
